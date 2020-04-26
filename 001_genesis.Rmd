@@ -1,0 +1,40 @@
+---
+title: "Genesis"
+date: 2020-04-26 10:30:23
+output:
+  html_document:
+    code_folding: hide
+    df_print: paged
+    highlight: tango
+    number_sections: yes
+    theme: flatly
+    toc: yes
+    toc_depth: 2
+bibliography: beginners_guide_mathematical_logic.bib
+---
+
+<style>
+
+body {
+text-align: justify}
+
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo      = TRUE, 
+                      warning   = FALSE, 
+                      message   = FALSE,
+                      fig.align = "center")
+```
+
+```{r libraries}
+
+
+```
+
+# Genesis
+
+This section is based on [@smullyan_beginners_2014, Chapter 1]
+
+# Bibliography
+
