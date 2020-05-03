@@ -11,6 +11,7 @@ output:
     toc: yes
     toc_depth: 2
 bibliography: beginners_guide_mathematical_logic.bib
+link-citations: yes
 ---
 
 <style>
@@ -36,5 +37,126 @@ knitr::opts_chunk$set(echo      = TRUE,
 
 This section is based on [@smullyan_beginners_2014, Chapter 1]
 
+## What is mathematical logic?
+
+In [@russell_mysticism_2008, Chapter 2, Section 5] Bertrand Russell talks about pure mathematics and its relation with formal logic or what we know as mathematical logic given us a general definition:
+
+_"Pure mathematics consists entirely of assertions to the effect that, if such and such a proposition is true of anything, then such and such another proposition is true of that thing. It is essential not to discuss whether the first proposition is really true, and not to mention what the anything is, of which it is supposed to be true. Both these points would belong to applied mathematics. We start, in pure mathematics, from certain rules of inference, by which we can infer that if one proposition is true, then so is some other proposition. These rules of inference constitute the major part of the principles of formal logic. We then take any hypothesis that seems amusing, and deduce its consequences. If our hypothesis is about anything, and not about some one or more particular things, then our deductions constitute mathematics. Thus mathematics may be defined as the subject in which we never know what we are talking about, nor whether what we are saying is true. People who have been puzzled by the beginnings of mathematics will, I hope, find comfort in this definition, and will probably agree that it is accurate."_
+
+However there is not a simple definition that make you understand what mathematical logic is all about. Only if you study it its nature will become apparent. Also mathematical logic has many purposes, but again, you will understand them after studying it. Anyway there is a purpose that we can understand now even if we don't have studied mathematical logic:
+
+- One of its purpose is to make precise the notion of proof
+
+__Problem 1__ "Good food is not cheap" and "Cheap food is not good" say different things or the same thing?
+
+- We can use propositional logic to understand this two statements. Let
+
+    + $p = \text{Food is good}$
+    
+    + $q = \text{Food is cheap}$
+    
+    + $p \implies \neg q: \text{Good food is not cheap}$
+    
+    + $q \implies \neg p: \text{Cheap food is not good}$
+    
+        + Later you will see that $p \implies \neg q$ and $q \implies \neg p$ are equivalent so we can point out that those two statements say the same thing in the context of propositional logic
+        
+        + According to Raymond Merrill Smullyan logically the two statements say the same thing but psychologically they convey diiferent things
+        
+            + $\text{Good food is not cheap}$ creates the image of expensive food that is good
+            
+            + $\text{Good food is not cheap}$ creates the image of cheap food that is rotten
+            
+- It is important to understand the difference between a _valid_ argument and a _sound_ argument
+
+    + An argument is _valid_ if and only if whenever the premises are all true then the conclusion is true. For example:
+    
+        + Premises (In this case the first premise is false): 
+        
+            + $\text{I am human and a bird}$ 
+            
+            + $\text{I am human}$
+        
+        + Conclusion (In this case the conclusion is a logical consequence of the premises): 
+        
+            + $\text{I am a bird}$
+    
+    + An argument is _sound_ if and only if it is valid and all its premises are true. For example:
+
+        + Premises (In this case all premises are true): 
+        
+            + $\text{I am human and not a bird}$
+            
+            + $\text{I am human}$
+        
+        + Conclusion (In this case the conclusion is a logical consequence of the premises):
+        
+            + $\text{I am not a bird}$
+            
+## Set theory
+
+The beginnings of mathematical logic went pretty much hand in hand with the nineteenth century development of _set theory_ and particularly the theory of _infinite sets_ founded by George Cantor. Some elements of basic set theory are described below
+
+- A set is any collection of objects whatsoever
+
+    + The basic notion of set theory is that of _membership_
+    
+        + The standard notation for membership is the symnol $\in$ and the expression _$x$ is a member of $A$_ is abbreviated $x \in A$
+        
+    + A set $A$ is said to be a _subset_ of $B$ if every member of $A$ is also a member of $B$
+    
+        + The phrase _$A$ is a subset of $B$_ is abbreviated $A \subseteq B$
+        
+        + Don't confuse $\in$ with $\subseteq$
+        
+            + If $H$ is the set of humans, $W$ is the set of women and $\text{Maria}$ is a woman then
+            
+                + $W \subseteq H$
+                
+                + $\text{Maria} \in W$
+                
+                + However it is not the case that
+                
+                    + $W \in H$ because the set of women is not a human
+                    
+                    + $\text{Maria} \subseteq H$ because $\text{Maria}$ is not a subset of humans
+                    
+      + A set $A$ is the same as the set $B$ if and only if they contain exactly the same elements
+      
+          + This is equivalent to $A = B$ if and only if $A \subseteq B$ and $B \subseteq A$
+          
+      + A set is called _empty_ if it contains not elements at all
+      
+          + The $\emptyset$ is abbreviated $\emptyset$
+      
+          + There can only be one empty set
+          
+          + This set has a strange characteristic if you encounter it for the first time
+          
+              + For any property $P$, all elements of the empty set have property $P$
+              
+                  + This characteristic is related to the use of the logical connective $\implies$ in mathematical logic where $p \implies q$ is false only when $q$ is falseand true in any other case 
+                  
+                      + $(\forall P)(\forall x)(x \in \emptyset \implies P(x))$
+                      
+                      + Alternatively, if $x \in \emptyset$ then $x$ has the property $P$ 
+                      
+                          + $x \in \emptyset$ is false so $x \in \emptyset \implies P(x)$ is true
+                          
+__Problem 2__ Is the empty set a subset of every set?
+
+What we want to answer is if this statement is true:
+
+$$(\forall A)(\forall x)(x \in \emptyset \implies x \in A)$$
+If we accept the use of the logical connective $\implies$ in mathematical logic then the above statement is true. Therefore $\emptyset$ is a subset of every set:
+
+- In particular $\emptyset \subseteq \emptyset$
+
+- Furthermore the only subset of $\emptyset$ is $\emptyset$ because if $A \neq \emptyset$ and there exist some $x$ such that $x \in A$ then the statement $x \in A \implies x \in \emptyset$ is false 
+
+## Boolean Operation on Sets
+
+
+        
 # Bibliography
 

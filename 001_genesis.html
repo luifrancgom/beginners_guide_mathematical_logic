@@ -1694,7 +1694,11 @@ summary {
 
 <div id="TOC">
 <ul>
-<li><a href="#genesis"><span class="toc-section-number">1</span> Genesis</a></li>
+<li><a href="#genesis"><span class="toc-section-number">1</span> Genesis</a><ul>
+<li><a href="#what-is-mathematical-logic"><span class="toc-section-number">1.1</span> What is mathematical logic?</a></li>
+<li><a href="#set-theory"><span class="toc-section-number">1.2</span> Set theory</a></li>
+<li><a href="#boolean-operation-on-sets"><span class="toc-section-number">1.3</span> Boolean Operation on Sets</a></li>
+</ul></li>
 <li><a href="#bibliography">Bibliography</a></li>
 </ul>
 </div>
@@ -1707,11 +1711,131 @@ text-align: justify}
 </style>
 <div id="genesis" class="section level1">
 <h1><span class="header-section-number">1</span> Genesis</h1>
-<p>This section is based on <span class="citation">(Smullyan 2014, Chapter 1)</span></p>
+<p>This section is based on <span class="citation">(Smullyan <a href="#ref-smullyan_beginners_2014" role="doc-biblioref">2014</a>, Chapter 1)</span></p>
+<div id="what-is-mathematical-logic" class="section level2">
+<h2><span class="header-section-number">1.1</span> What is mathematical logic?</h2>
+<p>In <span class="citation">(Russell <a href="#ref-russell_mysticism_2008" role="doc-biblioref">2008</a>, Chapter 2, Section 5)</span> Bertrand Russell talks about pure mathematics and its relation with formal logic or what we know as mathematical logic given us a general definition:</p>
+<p><em>“Pure mathematics consists entirely of assertions to the effect that, if such and such a proposition is true of anything, then such and such another proposition is true of that thing. It is essential not to discuss whether the first proposition is really true, and not to mention what the anything is, of which it is supposed to be true. Both these points would belong to applied mathematics. We start, in pure mathematics, from certain rules of inference, by which we can infer that if one proposition is true, then so is some other proposition. These rules of inference constitute the major part of the principles of formal logic. We then take any hypothesis that seems amusing, and deduce its consequences. If our hypothesis is about anything, and not about some one or more particular things, then our deductions constitute mathematics. Thus mathematics may be defined as the subject in which we never know what we are talking about, nor whether what we are saying is true. People who have been puzzled by the beginnings of mathematics will, I hope, find comfort in this definition, and will probably agree that it is accurate.”</em></p>
+<p>However there is not a simple definition that make you understand what mathematical logic is all about. Only if you study it its nature will become apparent. Also mathematical logic has many purposes, but again, you will understand them after studying it. Anyway there is a purpose that we can understand now even if we don’t have studied mathematical logic:</p>
+<ul>
+<li>One of its purpose is to make precise the notion of proof</li>
+</ul>
+<p><strong>Problem 1</strong> “Good food is not cheap” and “Cheap food is not good” say different things or the same thing?</p>
+<ul>
+<li><p>We can use propositional logic to understand this two statements. Let</p>
+<ul>
+<li><p><span class="math inline">\(p = \text{Food is good}\)</span></p></li>
+<li><p><span class="math inline">\(q = \text{Food is cheap}\)</span></p></li>
+<li><p><span class="math inline">\(p \implies \neg q: \text{Good food is not cheap}\)</span></p></li>
+<li><p><span class="math inline">\(q \implies \neg p: \text{Cheap food is not good}\)</span></p>
+<ul>
+<li><p>Later you will see that <span class="math inline">\(p \implies \neg q\)</span> and <span class="math inline">\(q \implies \neg p\)</span> are equivalent so we can point out that those two statements say the same thing in the context of propositional logic</p></li>
+<li><p>According to Raymond Merrill Smullyan logically the two statements say the same thing but psychologically they convey diiferent things</p>
+<ul>
+<li><p><span class="math inline">\(\text{Good food is not cheap}\)</span> creates the image of expensive food that is good</p></li>
+<li><p><span class="math inline">\(\text{Good food is not cheap}\)</span> creates the image of cheap food that is rotten</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>It is important to understand the difference between a <em>valid</em> argument and a <em>sound</em> argument</p>
+<ul>
+<li><p>An argument is <em>valid</em> if and only if whenever the premises are all true then the conclusion is true. For example:</p>
+<ul>
+<li><p>Premises (In this case the first premise is false):</p>
+<ul>
+<li><p><span class="math inline">\(\text{I am human and a bird}\)</span></p></li>
+<li><p><span class="math inline">\(\text{I am human}\)</span></p></li>
+</ul></li>
+<li><p>Conclusion (In this case the conclusion is a logical consequence of the premises):</p>
+<ul>
+<li><span class="math inline">\(\text{I am a bird}\)</span></li>
+</ul></li>
+</ul></li>
+<li><p>An argument is <em>sound</em> if and only if it is valid and all its premises are true. For example:</p>
+<ul>
+<li><p>Premises (In this case all premises are true):</p>
+<ul>
+<li><p><span class="math inline">\(\text{I am human and not a bird}\)</span></p></li>
+<li><p><span class="math inline">\(\text{I am human}\)</span></p></li>
+</ul></li>
+<li><p>Conclusion (In this case the conclusion is a logical consequence of the premises):</p>
+<ul>
+<li><span class="math inline">\(\text{I am not a bird}\)</span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="set-theory" class="section level2">
+<h2><span class="header-section-number">1.2</span> Set theory</h2>
+<p>The beginnings of mathematical logic went pretty much hand in hand with the nineteenth century development of <em>set theory</em> and particularly the theory of <em>infinite sets</em> founded by George Cantor. Some elements of basic set theory are described below</p>
+<ul>
+<li><p>A set is any collection of objects whatsoever</p>
+<ul>
+<li><p>The basic notion of set theory is that of <em>membership</em></p>
+<ul>
+<li>The standard notation for membership is the symnol <span class="math inline">\(\in\)</span> and the expression <em><span class="math inline">\(x\)</span> is a member of <span class="math inline">\(A\)</span></em> is abbreviated <span class="math inline">\(x \in A\)</span></li>
+</ul></li>
+<li><p>A set <span class="math inline">\(A\)</span> is said to be a <em>subset</em> of <span class="math inline">\(B\)</span> if every member of <span class="math inline">\(A\)</span> is also a member of <span class="math inline">\(B\)</span></p>
+<ul>
+<li><p>The phrase <em><span class="math inline">\(A\)</span> is a subset of <span class="math inline">\(B\)</span></em> is abbreviated <span class="math inline">\(A \subseteq B\)</span></p></li>
+<li><p>Don’t confuse <span class="math inline">\(\in\)</span> with <span class="math inline">\(\subseteq\)</span></p>
+<ul>
+<li><p>If <span class="math inline">\(H\)</span> is the set of humans, <span class="math inline">\(W\)</span> is the set of women and <span class="math inline">\(\text{Maria}\)</span> is a woman then</p>
+<ul>
+<li><p><span class="math inline">\(W \subseteq H\)</span></p></li>
+<li><p><span class="math inline">\(\text{Maria} \in W\)</span></p></li>
+<li><p>However it is not the case that</p>
+<ul>
+<li><p><span class="math inline">\(W \in H\)</span> because the set of women is not a human</p></li>
+<li><p><span class="math inline">\(\text{Maria} \subseteq H\)</span> because <span class="math inline">\(\text{Maria}\)</span> is not a subset of humans</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>A set <span class="math inline">\(A\)</span> is the same as the set <span class="math inline">\(B\)</span> if and only if they contain exactly the same elements</p>
+<ul>
+<li>This is equivalent to <span class="math inline">\(A = B\)</span> if and only if <span class="math inline">\(A \subseteq B\)</span> and <span class="math inline">\(B \subseteq A\)</span></li>
+</ul></li>
+<li><p>A set is called <em>empty</em> if it contains not elements at all</p>
+<ul>
+<li><p>The <span class="math inline">\(\emptyset\)</span> is abbreviated <span class="math inline">\(\emptyset\)</span></p></li>
+<li><p>There can only be one empty set</p></li>
+<li><p>This set has a strange characteristic if you encounter it for the first time</p>
+<ul>
+<li><p>For any property <span class="math inline">\(P\)</span>, all elements of the empty set have property <span class="math inline">\(P\)</span></p>
+<ul>
+<li><p>This characteristic is related to the use of the logical connective <span class="math inline">\(\implies\)</span> in mathematical logic where <span class="math inline">\(p \implies q\)</span> is false only when <span class="math inline">\(q\)</span> is falseand true in any other case</p>
+<ul>
+<li><p><span class="math inline">\((\forall P)(\forall x)(x \in \emptyset \implies P(x))\)</span></p></li>
+<li><p>Alternatively, if <span class="math inline">\(x \in \emptyset\)</span> then <span class="math inline">\(x\)</span> has the property <span class="math inline">\(P\)</span></p>
+<ul>
+<li><span class="math inline">\(x \in \emptyset\)</span> is false so <span class="math inline">\(x \in \emptyset \implies P(x)\)</span> is true</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p><strong>Problem 2</strong> Is the empty set a subset of every set?</p>
+<p>What we want to answer is if this statement is true:</p>
+<p><span class="math display">\[(\forall A)(\forall x)(x \in \emptyset \implies x \in A)\]</span> If we accept the use of the logical connective <span class="math inline">\(\implies\)</span> in mathematical logic then the above statement is true. Therefore <span class="math inline">\(\emptyset\)</span> is a subset of every set:</p>
+<ul>
+<li><p>In particular <span class="math inline">\(\emptyset \subseteq \emptyset\)</span></p></li>
+<li><p>Furthermore the only subset of <span class="math inline">\(\emptyset\)</span> is <span class="math inline">\(\emptyset\)</span> because if <span class="math inline">\(A \neq \emptyset\)</span> and there exist some <span class="math inline">\(x\)</span> such that <span class="math inline">\(x \in A\)</span> then the statement <span class="math inline">\(x \in A \implies x \in \emptyset\)</span> is false</p></li>
+</ul>
+</div>
+<div id="boolean-operation-on-sets" class="section level2">
+<h2><span class="header-section-number">1.3</span> Boolean Operation on Sets</h2>
+</div>
 </div>
 <div id="bibliography" class="section level1 unnumbered">
 <h1>Bibliography</h1>
 <div id="refs" class="references">
+<div id="ref-russell_mysticism_2008">
+<p>Russell, Bertrand. 2008. <em>Mysticism and Logic: And Other Essays</em>. Place of publication not identified: publisher not identified. <a href="https://www.gutenberg.org/files/25447/25447-h/25447-h.htm">https://www.gutenberg.org/files/25447/25447-h/25447-h.htm</a>.</p>
+</div>
 <div id="ref-smullyan_beginners_2014">
 <p>Smullyan, Raymond Merrill. 2014. <em>A Beginner’s Guide to Mathematical Logic</em>. Dover Books on Mathematics. Mineola, New York: Dover Publications, Inc.</p>
 </div>
