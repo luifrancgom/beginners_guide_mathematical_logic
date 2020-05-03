@@ -152,7 +152,7 @@ If we accept the use of the logical connective $\implies$ in mathematical logic 
 
 - In particular $\emptyset \subseteq \emptyset$
 
-- Furthermore the only subset of $\emptyset$ is $\emptyset$ because if $A \neq \emptyset$ and there exist some $x$ such that $x \in A$ then the statement $x \in A \implies x \in \emptyset$ is false 
+- Furthermore the only subset of $\emptyset$ is $\emptyset$ because if $A \neq \emptyset$ and if there exist some $x$ such that $x \in A$ then the statement $x \in A \implies x \in \emptyset$ is false 
 
 ## Boolean Operation on Sets
 
