@@ -1,0 +1,49 @@
+---
+title: "Infinite sets"
+date: 2020-05-17 00:46:22
+output:
+  html_document:
+    code_folding: hide
+    df_print: paged
+    highlight: tango
+    number_sections: yes
+    theme: flatly
+    toc: yes
+    toc_depth: 2
+bibliography: beginners_guide_mathematical_logic.bib
+link-citations: yes
+---
+
+<style>
+
+body {
+text-align: justify}
+
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo      = TRUE, 
+                      warning   = FALSE, 
+                      message   = FALSE,
+                      fig.align = "center")
+```
+
+```{r libraries}
+
+library(tidyverse)
+library(ggforce)
+```
+
+# Infinite sets
+
+This section is based on [@smullyan_beginners_2014, Chapter 2]
+
+__Problem 1__
+
+# Size of infinite sets
+
+
+
+# Bibliography
+
+
